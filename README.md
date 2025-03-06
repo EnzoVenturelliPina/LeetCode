@@ -1,3 +1,8 @@
+# About this Project
+This project was created with the goal of improving my algorithmic thinking and data structure skills, aiming to become a more capable and well-prepared professional for technical challenges. In each code solution, I thoroughly document my thought process, the difficulties I encountered, and the understanding I gained throughout the process.
+
+I believe this approach not only reinforces my learning but also demonstrates my continuous growth and ability to solve problems in a structured and efficient way. This repository serves as a portfolio of my programming skills, using LeetCode as a platform for practice and development.
+
 # LeetCode Solutions
 
 | Problem in LeetCode         | Description                          | Difficulty | Data       | Link for My Solution| 
