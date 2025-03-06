@@ -12,6 +12,7 @@ O(n), as the array is traversed once and operations on the HashMap are O(1) on a
 O(n), due to storing the numbers in the HashMap.
 
 # Code
+### Java
 ```java
 import java.util.HashMap;
 
