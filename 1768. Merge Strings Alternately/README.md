@@ -1,12 +1,12 @@
 # Intuition
-Initially, I thought about converting the integer into a string and comparing the last element with the first, as this approach would be simpler than performing successive divisions based on the number's length if I were to work directly with the digits.
+I thought about traversing both words only once, alternately adding the letters to a variable that would form the new word. To achieve this, I used a StringBuilder, which allows efficient character addition using the append method.
 
 # Approach
-I converted the integer into a string and then, using a for loop and an if statement, compared the first element with the last. If at any point the compared elements were different, the function would return false. After the loop, if no differences were found, the function would return true.
+With a while loop, I traversed both words simultaneously, ensuring that each character was processed only once. Inside the loop, I used if conditions to check if there were still characters available in each word and, if so, added them to the StringBuilder.
 
 # Complexity
 **Time complexity:**
-O(n), where n is the number of digits in the input number. The loop runs through half of the string.
+The algorithm traverses both input strings (word1 and word2) once, where n is the length of word1 and m is the length of word2. Since each character is processed only once, the time complexity is linear with respect to the combined length of the two strings.
 
 **Space complexity:**
-O(n), as the number is converted into a string, requiring additional space proportional to the number of digits.
+The StringBuilder stores the merged result, which, in the worst case, will have a length equal to the sum of the lengths of word1 and word2. Therefore, the space complexity is proportional to the combined length of the two input strings.
