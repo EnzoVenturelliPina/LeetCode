@@ -10,3 +10,23 @@ O(n), as the array is traversed once and operations on the HashMap are O(1) on a
 
 **Space complexity:**
 O(n), due to storing the numbers in the HashMap.
+
+# Code
+```java
+import java.util.HashMap;
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        HashMap <Integer, Integer> map = new HashMap<>();
+
+        for (int i=0; i < nums.length; i++){
+            int complement = target - nums[i];
+            if (map.containsKey(complement)){
+                return new int[] {map.get(complement), i};
+            }
+            map.put(nums[i], i);
+        }
+        throw new IllegalArgumentException("Erro");
+    }
+}
+```
