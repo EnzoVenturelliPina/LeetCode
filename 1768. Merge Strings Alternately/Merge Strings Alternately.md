@@ -10,3 +10,24 @@ The algorithm traverses both input strings (word1 and word2) once, where n is th
 
 **Space complexity:**
 The StringBuilder stores the merged result, which, in the worst case, will have a length equal to the sum of the lengths of word1 and word2. Therefore, the space complexity is proportional to the combined length of the two input strings.
+
+# Code
+### Java
+```Java
+class Solution {
+    public String mergeAlternately(String word1, String word2) {
+        String merged = new StringBuilder();
+        int i = 0;
+        while ((word1.length() > i) | (word2.length() > i)){
+            if(word1.length() > i){
+                merged.append(word1.charAt(i));
+            }
+            if(word2.length() > i){
+                merged.append(word2.charAt(i));
+            }
+            i++;
+        }
+        return merged.toString();
+    }
+}
+```
