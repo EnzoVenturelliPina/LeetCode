@@ -10,3 +10,21 @@ O(n), where n is the number of digits in the input number. The loop runs through
 
 **Space complexity:**
 O(n), as the number is converted into a string, requiring additional space proportional to the number of digits.
+
+# Code
+### Java
+```Java
+class Solution {
+    public boolean isPalindrome(int x) {
+        String palindrome = String.valueOf(x);
+        int aux = palindrome.length() - 1;
+        for (int i = 0; i < (palindrome.length())/2; i++){
+            if (palindrome.charAt(i) != palindrome.charAt(aux)){
+                return false;
+            }
+            aux--;
+        }
+        return true;
+    }
+}****
+```
